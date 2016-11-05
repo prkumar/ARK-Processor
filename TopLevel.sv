@@ -19,17 +19,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 module TopLevel(
     input     start,
-	input     CLK,
+	 input     CLK,
     output    halt,
-	output [ 3:0] write_register,
+	 output [ 3:0] write_register,
     output [15:0] regWriteValue,
     output        REG_WRITE,
     output [15:0] memWriteValue,
     output        MEM_WRITE,
     output [ 7:0] PC,
-	output        BRANCH,
+	 output        BRANCH,
     output logic [15:0] InstCounter,
-	output  [9:0] Instruction
+	 output  [9:0] Instruction
     );
 
 	// control signals not defined as outputs

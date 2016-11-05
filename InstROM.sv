@@ -39,7 +39,7 @@ module InstROM(
 		2 : InstOut = 10'b0010000001;  // sw reg 1 to address in reg 0
 		
 // opcode = 3 beqz, rs = 1, target = 1
-        3 : InstOut = 10'b0011001001;  // beqz reg1 to absolute address 1
+      3 : InstOut = 10'b0011001001;  // beqz reg1 to absolute address 1
 		
 // opcode = 15 halt
 		4 : InstOut = 10'b1111111111;  // halt

@@ -36,12 +36,12 @@ module IF_tb;
 
 	// Instantiate the Unit Under Test (UUT)
 	IF uut (
-  	  .Branch, 
-	  .Target, 
-	  .Init  , 
-	  .Halt  , 
-	  .CLK   , 
-	  .PC    
+  	  .Branch(Branch), 
+	  .Target(Target), 
+	  .Init(Init)  , 
+	  .Halt(Halt)  , 
+	  .CLK(CLK)   , 
+	  .PC(PC)    
 	);
 
   initial begin

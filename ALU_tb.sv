@@ -29,17 +29,15 @@ module ALU_tb;
 
 // Outputs
   wire [15:0] OUT;
-  wire        ZERO;
-  wire        EQUAL;
+  wire        OVERFLOW;
 
 	// Instantiate the Unit Under Test (UUT)
   ALU uut (
-		.OP, 
-		.INPUTA, 
-		.INPUTB, 
-		.OUT, 
-		.ZERO, 
-		.EQUAL
+		.OP(OP), 
+		.INPUTA(INPUTA), 
+		.INPUTB(INPUTB), 
+		.OUT(OUT), 
+		.OVERFLOW(OVERFLOW)
 	);
 
 initial begin
@@ -47,12 +45,12 @@ initial begin
   #100ns;
         
 // Add stimulus here
-  INPUTA = 16'h0004;
-  INPUTB = 16'h0004;
+  INPUTA = 8'h44;
+  INPUTB = 8'h44;
   #20ns  OP = kSUB;
-  #20ns	 OP = kAND;
-  #20ns	 INPUTB = 16'h0003;
-  OP = kXOR;
+  #20ns	 OP = kADD;
+  #20ns	 INPUTB = 8'h22;
+  OP = kPASS_INPUTB;
 end
 
 endmodule
