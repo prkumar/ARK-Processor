@@ -19,8 +19,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 module TopLevel(
     input     start,
-	input     CLK,
-    output    halt,
+	 input     CLK,
+    output    halt
     );
 
 	// Control Signals
@@ -71,8 +71,8 @@ module TopLevel(
 	wire [7:0] WriteData;
 
 	assign Overflow = Branch ^ CarryOut;
-	assign ReadReg1 = (Format == 'b1) ? {'b0, Instruction[1:0]} + 3'b100 : Instruction[2:0];
-	assign ReadReg2 = (Format == 'b1) ? {'b0, Instruction[3:2]} + 3'b100 : Instruction[5:3];
+	assign ReadReg1 = (Format == 'b1) ? {1'b0, Instruction[1:0]} + 3'b100 : Instruction[2:0];
+	assign ReadReg2 = (Format == 'b1) ? {1'b0, Instruction[3:2]} + 3'b100 : Instruction[5:3];
 
 	always_comb begin
 		// Manage ALU second source
@@ -119,7 +119,7 @@ module TopLevel(
 		.ALUSrcB(AluSrcB),
 		.MemWrite(MemWrite),
 		.MemtoReg(MemtoReg),
-		.ALUOp(ALUOp)
+		.ALUOp(ALUOp),
 		.HALT(halt)
 	);
 
@@ -133,7 +133,7 @@ module TopLevel(
 		.ReadData1(ReadData1),
 		.ReadData2(ReadData2),
 		.Compare(Compare),
-		.Accumulator(Accumulator),
+		.Accumulator(Accumulator)
 	);
 	
 	ALU ALU_Module (

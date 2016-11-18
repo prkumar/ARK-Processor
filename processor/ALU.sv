@@ -36,11 +36,13 @@ module ALU(
   always_comb begin
     // TODO: Figure out how to do the carry-out logic
 	
-	case(OP)
+	Out = 0;
+	CarryOut = 0;
+	case(ALUOp)
     	 kPASS_A: Out = A;
-         kSHIFT_LEFT: Out = A << 1;
-         kSHIFT_RIGHT: Out = A >> 1;
-         kKEEP_SMALLER: Out = (A > B) ? A : B;
+       kSHIFT_LEFT: Out = A << 1;
+       kSHIFT_RIGHT: Out = A >> 1;
+       kKEEP_SMALLER: Out = (A > B) ? A : B;
     	 kSHIFT_ON: Out = (A << 1) | (B & 8'b00000001);
     	 kADD: Out = A + B;
     	 kA_IS_ZERO: CarryOut = (A == 'b0) ? 'b1 : 'b0;

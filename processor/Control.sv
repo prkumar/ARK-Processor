@@ -34,7 +34,7 @@ module Control(
 	// TODO: Add each instruction to the case switch and 
 	//       set the control wires to the appropriate values.
 	always_comb	begin
-		case(INSTRUCTION)
+		case(Instruction)
 		  default: HALT = 1;
 		endcase
 	end

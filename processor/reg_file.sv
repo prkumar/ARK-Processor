@@ -39,7 +39,7 @@ module reg_file #(parameter W=8, D=3)(
     // We use the value of the $accumulator in other components of
     // the processor -- e.g., the data memory reads/write data to
     // the address pointed to by the $accumulator
-    output logic [W-1:0] Accumulator,
+    output logic [W-1:0] Accumulator
     );
 
 // 8 bits wide [7:0] and 8 registers deep [0:8] or just [8]	 
@@ -47,11 +47,11 @@ logic [W-1:0] registers[2**D];
 logic [W-1:0] compare45, compare46, compare56;
 
 // combinational reads.
-assign      Accumulator = registers[0]
+assign      Accumulator = registers[0];
 assign      ReadData1   = registers[ReadReg1];
 
 // if AccRead is set, we read from $accumulator, else act normally.
-always_comb ReadData2   = (AccRead == 'b1) ? Accumulator : registers[srcB];
+always_comb ReadData2   = (AccRead == 'b1) ? Accumulator : registers[ReadReg2];
 
 // compare the designated registers and set Compare the smallest difference. 
 always_comb begin
@@ -69,8 +69,8 @@ end
 // sequential (clocked) writes
 always_ff @ (posedge CLK)
   if (RegWrite == 'b01)  // Write to the first register
-    registers[ReadReg1] <= writeValue;
+    registers[ReadReg1] <= WriteValue;
   else if (RegWrite == 'b10) // Write to second register
-	registers[ReadReg2] <= writeValue;
+	registers[ReadReg2] <= WriteValue;
   
 endmodule

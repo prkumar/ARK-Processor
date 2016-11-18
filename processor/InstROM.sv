@@ -27,8 +27,8 @@ module InstROM(
     // TODO: Add each instruction to the case
 	 
 	 always_comb 
-		case (InstAddress)
-		default : InstOut = 10'b0000000000;
+		case (Address)
+		default : Instruction = 10'b0000000000;
     endcase
 
 endmodule

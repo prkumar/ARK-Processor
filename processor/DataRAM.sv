@@ -20,7 +20,7 @@ module DataRAM(Address, MemWrite, WriteData, MemOut, CLK);
     input CLK;
 
     // control signal
-    input WriteMem;
+    input MemWrite;
 
     // other inputs
     input  [7:0] Address;
@@ -32,10 +32,10 @@ module DataRAM(Address, MemWrite, WriteData, MemOut, CLK);
     // initial 
     // $readmemh("dataram_init.list", my_memory);
 
-    assign WriteData = my_memory[Address];
+    assign MemOut = my_memory[Address];
 
     always @ (posedge CLK)
-        if(WriteMem) begin
+        if(MemWrite) begin
             my_memory[Address] = WriteData;
 			$display("Memory write M[%d] = %d", Address, WriteData);
         end
