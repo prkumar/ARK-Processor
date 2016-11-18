@@ -23,34 +23,34 @@ import definitions::*;
 module ALU_tb;
 
 // Inputs
-  bit [ 1:0] OP;
-  bit [15:0] INPUTA;
-  bit [15:0] INPUTB;
+  bit [3:0]  ALUOp;
+  bit [7:0]  InputA;
+  bit [7:0]  InputB;
 
 // Outputs
-  wire [15:0] OUT;
-  wire        OVERFLOW;
+  wire [7:0] Out;
+  wire       CarryOut;
 
 	// Instantiate the Unit Under Test (UUT)
   ALU uut (
-		.OP(OP), 
-		.INPUTA(INPUTA), 
-		.INPUTB(INPUTB), 
-		.OUT(OUT), 
-		.OVERFLOW(OVERFLOW)
+		.ALUOp,
+		.A(A), 
+		.B(B), 
+		.Out(Out), 
+		.CarryOut(CarryOut)
 	);
 
 initial begin
-// Wait 100 ns for global reset to finish
-  #100ns;
-        
-// Add stimulus here
-  INPUTA = 8'h44;
-  INPUTB = 8'h44;
-  #20ns  OP = kSUB;
+// Wait 30 ns for global reset to finish
+  #30ns;
+		  
+  // Add stimulus here
+  ALUOp = kPASS_INPUTB;
+  A     = 8'b00000000;
+  B     = 8'b00000001;
   #20ns	 OP = kADD;
   #20ns	 INPUTB = 8'h22;
-  OP = kPASS_INPUTB;
+  ALUOp = kPASS_INPUTA;
 end
 
 endmodule

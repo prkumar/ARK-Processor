@@ -16,6 +16,10 @@ package definitions;
 	 const logic [3:0]kSUB = 4'b1011;
 	 const logic [3:0]kPARALLEL = 4'b1100;
     
-    typedef enum logic[3:0] op_mne;
+    typedef enum logic[3:0] {
+       ADDU = 4'b0101,
+       SUBU = 4'b1011
+   }
+	op_mne;
     
 endpackage // defintions
