@@ -62,10 +62,10 @@ module TopLevel(
 
 	// Register file inputs
 	wire [3:0] ReadReg1, ReadReg2;
-	wire [7:0] WriteValue;
+	logic [7:0] WriteValue;
 
 	// ALU wires
-	wire [7:0] ALUInputB;
+	logic [7:0] ALUInputB;
 
 	// Data Memory
 	wire [7:0] WriteData;
