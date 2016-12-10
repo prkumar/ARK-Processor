@@ -24,11 +24,6 @@ module InstROM(
     output logic[8:0] Instruction
     );
 
-    // TODO: Add each instruction to the case
-	 
-	 always_comb 
-		case (Address)
-		default : Instruction = 10'b0000000000;
-    endcase
-
+    logic [9:0] ROM_core[2**8];
+	assign Instruction = ROM_core[Address];
 endmodule

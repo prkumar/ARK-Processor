@@ -18,8 +18,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module TopLevel(
-    input     start,
-	 input     CLK,
+	input     start,
+    input     CLK,
+    input logic [9:0] instructions[2**8],
     output    halt
     );
 
@@ -106,6 +107,7 @@ module TopLevel(
 	// instruction ROM
 	InstROM inst_module(
 		.Address(PC), 
+		.ROM_core   (instructions),
 		.Instruction(Instruction)
 	);
 

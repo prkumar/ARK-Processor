@@ -28,9 +28,7 @@ module DataRAM(Address, MemWrite, WriteData, MemOut, CLK);
     output [7:0] MemOut;
 
     logic  [7:0] my_memory [0:255];
-
-    // initial 
-    // $readmemh("dataram_init.list", my_memory);
+    $readmemb("dataram_init.list", my_memory);
 
     assign MemOut = my_memory[Address];
 

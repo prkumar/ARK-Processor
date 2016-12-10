@@ -58,7 +58,7 @@ always_comb begin
     compare45 = registers[4] - registers[5];
     compare46 = registers[4] - registers[6];
     compare56 = registers[5] - registers[6];
-    if ((compare45 < compare46) &&  (compare45 < compare56))
+    if ((compare45 < compare46) && (compare45 < compare56))
         Compare = compare45;
     else if ((compare46 < compare45) && (compare46 < compare56))
         Compare = compare46;
