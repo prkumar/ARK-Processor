@@ -24,6 +24,16 @@ module InstROM(
     output logic[8:0] Instruction
     );
 
-    logic [9:0] ROM_core[2**8];
-	assign Instruction = ROM_core[Address];
+    logic [8:0] ROM_core[2**8];
+
+    initial
+        $readmemb("instructions_17.txt", ROM_core);
+
+    always_comb begin//  always_comb
+        Instruction = ROM_core[Address];  
+        case (Address)
+            1022 : Instruction = 9'b000001111;  // override for address 1022  
+            1023 : Instruction = 9'b000000001; // override for address 1023    
+        endcase
+    end
 endmodule

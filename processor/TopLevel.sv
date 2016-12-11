@@ -20,12 +20,11 @@
 module TopLevel(
 	input     start,
     input     CLK,
-    input logic [9:0] instructions[2**8],
     output    halt
     );
 
 	// Control Signals
-	wire Format, Branch, AccRead, MemWrite;
+	wire Format, Branch, AccRead, MemWrite, OverflowSwitch;
 	wire [3:0] ALUOp;
 	wire [1:0] ALUSrcB, RegWrite, MemtoReg;
 
@@ -37,7 +36,7 @@ module TopLevel(
 	wire Overflow;
 
 	// Instruction and Instruction Counter
-	wire  [9:0]  Instruction;
+	logic  [8:0] Instruction;
 	logic [15:0] InstCounter;
 
 	// ===== OUTPUTS ===== //
@@ -50,37 +49,35 @@ module TopLevel(
 
 	// ALU outputs
 	wire [7:0] ALUOut;
-	wire CarryOut;
+	wire ALUOverflow;
 
 	// Data Memory outputs
 	wire [7:0] MemOut;
 
-	// IF module inputs
-	// this target is relative to the current PC
-	wire [7:0] RelativeTarget;
+	// Overflow register
+	wire CarryOut;
 
 	// ===== INPUTS ===== //
 
 	// Register file inputs
-	wire [3:0] ReadReg1, ReadReg2;
+	wire [2:0] ReadReg1, ReadReg2;
 	logic [7:0] WriteValue;
 
 	// ALU wires
 	logic [7:0] ALUInputB;
 
-	// Data Memory
-	wire [7:0] WriteData;
 
-	assign Overflow = Branch ^ CarryOut;
-	assign ReadReg1 = (Format == 'b1) ? {1'b0, Instruction[1:0]} + 3'b100 : Instruction[2:0];
+	assign Overflow = Branch ^ ALUOverflow;
 	assign ReadReg2 = (Format == 'b1) ? {1'b0, Instruction[3:2]} + 3'b100 : Instruction[5:3];
+	assign ReadReg1 = (Format == 'b1) ? {1'b0, Instruction[1:0]} + 3'b100 : Instruction[2:0];
 
 	always_comb begin
+		
 		// Manage ALU second source
 		case(ALUSrcB)
 			2'b00 : ALUInputB  = ReadData2;
 			2'b01 : ALUInputB  = Compare;
-			2'b10 : ALUInputB  = {7'b0000000, Overflow};
+			2'b10 : ALUInputB  = {7'b0000000, CarryOut};
 		endcase
 
 		// Manage write value to register
@@ -88,16 +85,24 @@ module TopLevel(
 			2'b00 : WriteValue = ALUOut;
 			2'b01 : WriteValue = MemOut;
 			// replace the high 4-bits of the accumulator
-			2'b10 : WriteValue = (8'b11110000 && Accumulator) || {4'b0000, Instruction[3:0]};
+			2'b10 : WriteValue = (8'b11110000 & Accumulator) | {4'b0000, Instruction[3:0]};
 			// replace the low 4-bits of the accumulator
-			2'b11 : WriteValue = (8'b00001111 && Accumulator) || {Instruction[3:0], 4'b0000};
+			2'b11 : WriteValue = (8'b00001111 & Accumulator) | {Instruction[3:0], 4'b0000};
 		endcase
 	end
 
+	carry_reg of (
+		.clk(CLK),
+		.reset(start),
+		.switch(OverflowSwitch),
+		.d_in (Overflow),
+		.d_out(CarryOut)
+	);
+
 	 // Fetch Module
 	 IF if_module (
-		.Branch (Branch && (~Overflow)), 
-		.Target({2'b00,Instruction[6:0]}), 
+		.Branch (Branch & (~CarryOut)), 
+		.Target({2'b0, Instruction[6:0]}), 
 		.Init(start), 
 		.Halt(halt), 
 		.CLK(CLK), 
@@ -107,7 +112,6 @@ module TopLevel(
 	// instruction ROM
 	InstROM inst_module(
 		.Address(PC), 
-		.ROM_core   (instructions),
 		.Instruction(Instruction)
 	);
 
@@ -118,10 +122,11 @@ module TopLevel(
 		.AccRead(AccRead),
 		.RegWrite(RegWrite),
 		.Branch(Branch),
-		.ALUSrcB(AluSrcB),
+		.ALUSrcB(ALUSrcB),
 		.MemWrite(MemWrite),
 		.MemtoReg(MemtoReg),
 		.ALUOp(ALUOp),
+		.OverflowSwitch(OverflowSwitch),
 		.HALT(halt)
 	);
 
@@ -143,13 +148,13 @@ module TopLevel(
 		.A(ReadData1), 
 		.B(ALUInputB),
 		.Out(ALUOut), 
-		.CarryOut(CarryOut)
+		.CarryOut(ALUOverflow)
 	);
 
 	DataRAM Data_Module(
 		.Address(Accumulator), 
 		.MemWrite(MemWrite), 
-		.WriteData(WriteData), 
+		.WriteData(ALUOut), 
 		.MemOut(MemOut), 
 		.CLK(CLK) 
 	);

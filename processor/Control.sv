@@ -28,12 +28,23 @@ module Control(
     output logic       MemWrite,
     output logic [1:0] MemtoReg,
     output logic [3:0] ALUOp,
+    output logic       OverflowSwitch,
 	output logic       HALT
     );
 
 	always_comb	begin
-		case(Instruction)
-         7'b1000000 : begin // load
+	  Format     = 1;
+	  AccRead    = 0;
+	  RegWrite   = 0;    // 2 is 0 don't care
+	  Branch     = 0; 
+	  ALUSrcB    = 0;    // use mem read
+	  ALUOp      = kPASS_A;
+	  MemWrite   = 0;
+	  MemtoReg   = 0;
+    OverflowSwitch = 0;
+	  HALT       = 0;
+	
+		if (Instruction[8:2] == 7'b1000000) begin // load
               Format     = 1;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
@@ -43,8 +54,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 1;
               HALT       = 0;
-         end
-         7'b1000001 : begin // store
+              OverflowSwitch = 0;
+          end
+    else if (Instruction[8:2] == 7'b1000001) begin // store
               Format     = 1;
               AccRead    = 1;
               RegWrite   = 2;    // 2 is 0 don't care
@@ -54,8 +66,9 @@ module Control(
               MemWrite   = 1;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
          end
-         7'b0000000 : begin  // parallel_comp
+    else if (Instruction[8:2] == 7'b0000000) begin  // parallel_comp
               Format     = 1;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
@@ -65,8 +78,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b0000010 : begin  // addo
+    else if (Instruction[8:2] == 7'b0000010) begin  // addo
               Format     = 1;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
@@ -76,8 +90,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b0000011 : begin  // is_zero
+    else if (Instruction[8:2] == 7'b0000011) begin  // is_zero
               Format     = 1;
               AccRead    = 0;
               RegWrite   = 0;    // 2 is 0 don't care
@@ -87,8 +102,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b100010x : begin  // copy
+    else if (Instruction[8:3] == 6'b100010) begin  // copy
               Format     = 0;
               AccRead    = 1;
               RegWrite   = 2;    // 2 is 0 don't care
@@ -98,8 +114,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b100011x : begin  // paste
+    else if (Instruction[8:3] == 6'b100011) begin  // paste
               Format     = 0;
               AccRead    = 1;
               RegWrite   = 1;    // 2 is 0 don't care
@@ -109,8 +126,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b100100x : begin  // inc
+    else if (Instruction[8:3] == 6'b100100) begin  // inc
               Format     = 0;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
@@ -120,8 +138,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b100101x : begin  // dec
+    else if (Instruction[8:3] == 6'b100101) begin  // dec
               Format     = 0;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
@@ -131,8 +150,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b100110x : begin // clear
+    else if (Instruction[8:3] == 6'b100110) begin // clear
               Format     = 0;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
@@ -142,20 +162,22 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b100111x : begin  // sub
+    else if (Instruction[8:3] == 6'b100111) begin  // sub
               Format     = 0;
               AccRead    = 1;
-              RegWrite   = 1;    // 2 is 0 don't care
+              RegWrite   = 0;    // 2 is 0 don't care
               Branch     = 0; 
               ALUSrcB    = 0;    // use mem read
               ALUOp      = kSUB;
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b101000x : begin  // shiftl
-              Format     = 1;
+    else if (Instruction[8:3] == 6'b101000) begin  // shiftl
+              Format     = 0;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
               Branch     = 0; 
@@ -164,9 +186,10 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b101001x : begin  // shiftr
-              Format     = 1;
+    else if (Instruction[8:3] == 6'b101001) begin  // shiftr
+              Format     = 0;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
               Branch     = 0; 
@@ -175,9 +198,10 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b101010x : begin  // shifto
-              Format     = 1;
+    else if (Instruction[8:3] == 6'b101010) begin  // shifto
+              Format     = 0;
               AccRead    = 0;
               RegWrite   = 1;    // 2 is 0 don't care
               Branch     = 0; 
@@ -186,8 +210,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b001xxxx : begin  // add
+    else if (Instruction[8:6] == 3'b001) begin  // add
               Format     = 0;
               AccRead    = 0;
               RegWrite   = 2;    // 2 is 0 don't care
@@ -197,8 +222,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b10111xx : begin  // str_match
+    else if (Instruction[8:4] == 5'b10111) begin  // str_match
               Format     = 1;
               AccRead    = 0;
               RegWrite   = 0;    // 2 is 0 don't care
@@ -208,8 +234,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b11000xx : begin  // high
+    else if (Instruction[8:4] == 5'b11000) begin  // high
               Format     = 0;
               AccRead    = 1;
               RegWrite   = 2;    // 2 is 0 don't care
@@ -219,8 +246,9 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 3;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b11001xx : begin  // low
+    else if (Instruction[8:4] == 5'b11001) begin  // low
               Format     = 0;
               AccRead    = 1;
               RegWrite   = 2;    // 2 is 0 don't care
@@ -230,20 +258,23 @@ module Control(
               MemWrite   = 0;
               MemtoReg   = 2;
               HALT       = 0;
+              OverflowSwitch = 0;
           end
-          7'b01xxxxx : begin  // boz
+    else if (Instruction[8:7] == 2'b01) begin  // boz
               Format     = 0;
               AccRead    = 0;
               RegWrite   = 0;    // 2 is 0 don't care
               Branch     = 1; 
               ALUSrcB    = 0;    // use mem read
-              ALUOp      = kPASS_B;
+              ALUOp      = kPASS_A;
               MemWrite   = 0;
               MemtoReg   = 0;
               HALT       = 0;
+              OverflowSwitch = 1;
           end
-		  default: HALT = 1;
-		endcase
+		else 
+      HALT = 1;
+
 	end
 
 endmodule

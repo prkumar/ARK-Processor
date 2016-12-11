@@ -1,0 +1,344 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/psf/Home/Developer/ark-processor/processor
+vALU
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 DXx4 work 11 definitions 0 22 9`o2DYT^N4GOGT=oW`<?:3
+DXx4 work 11 ALU_sv_unit 0 22 6?de?eaL>0bS5?DRmA<3>2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 >Bcz@D40>Cli7NK[^g<?z0
+IOIDI^3dBjd2<QQ_<_1`E@0
+!s105 ALU_sv_unit
+S1
+R0
+Z4 w1481369152
+Z5 8/media/psf/Home/Developer/ark-processor/processor/ALU.sv
+Z6 F/media/psf/Home/Developer/ark-processor/processor/ALU.sv
+Z7 L0 21
+Z8 OV;L;10.4d;61
+Z9 !s108 1481371320.000000
+Z10 !s107 /media/psf/Home/Developer/ark-processor/processor/ALU.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/ALU.sv|
+!i113 1
+Z12 o-work work -sv
+n@a@l@u
+XALU_sv_unit
+R1
+R2
+V6?de?eaL>0bS5?DRmA<3>2
+r1
+!s85 0
+31
+!i10b 1
+!s100 BBI9ln_odC_0G6SkoeNk63
+I6?de?eaL>0bS5?DRmA<3>2
+!i103 1
+S1
+R0
+R4
+R5
+R6
+Z13 L0 20
+R8
+R9
+R10
+R11
+!i113 1
+R12
+n@a@l@u_sv_unit
+vcarry_reg
+R1
+Z14 !s110 1481371321
+!i10b 1
+!s100 0_dI2R44^ciYBAd]jcGC^0
+IdeBU>7NST<bdWBnHd1^FJ3
+R3
+!s105 carry_reg_sv_unit
+S1
+R0
+w1481360071
+8/media/psf/Home/Developer/ark-processor/processor/carry_reg.sv
+F/media/psf/Home/Developer/ark-processor/processor/carry_reg.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z15 !s108 1481371321.000000
+!s107 /media/psf/Home/Developer/ark-processor/processor/carry_reg.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/carry_reg.sv|
+!i113 1
+R12
+vControl
+R1
+R2
+DXx4 work 15 Control_sv_unit 0 22 fnCj]gO;?F1<@g[`9QQCH3
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 hXafeP8CPog@BY>nTHSYC3
+Iz0`5<2[UWA:PKYaPAMjX43
+!s105 Control_sv_unit
+S1
+R0
+Z16 w1481370177
+Z17 8/media/psf/Home/Developer/ark-processor/processor/Control.sv
+Z18 F/media/psf/Home/Developer/ark-processor/processor/Control.sv
+R7
+R8
+R9
+Z19 !s107 /media/psf/Home/Developer/ark-processor/processor/Control.sv|
+Z20 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/Control.sv|
+!i113 1
+R12
+n@control
+XControl_sv_unit
+R1
+R2
+VfnCj]gO;?F1<@g[`9QQCH3
+r1
+!s85 0
+31
+!i10b 1
+!s100 F[a49a;@O^[>6?BcQU?KE0
+IfnCj]gO;?F1<@g[`9QQCH3
+!i103 1
+S1
+R0
+R16
+R17
+R18
+R13
+R8
+R9
+R19
+R20
+!i113 1
+R12
+n@control_sv_unit
+vDataRAM
+R1
+Z21 !s110 1481371320
+!i10b 1
+!s100 S=B>NLKGCE5Mh225kj_J`2
+IY`An3Z56C1ffTBmXd=1V]1
+R3
+!s105 DataRAM_sv_unit
+S1
+R0
+w1481339583
+8/media/psf/Home/Developer/ark-processor/processor/DataRAM.sv
+F/media/psf/Home/Developer/ark-processor/processor/DataRAM.sv
+L0 19
+R8
+r1
+!s85 0
+31
+R9
+!s107 /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/DataRAM.sv|
+!i113 1
+R12
+n@data@r@a@m
+Xdefinitions
+R1
+R21
+!i10b 1
+!s100 4[H@adMJQTLkjbUnG5jh[3
+I9`o2DYT^N4GOGT=oW`<?:3
+V9`o2DYT^N4GOGT=oW`<?:3
+S1
+R0
+w1481331490
+8/media/psf/Home/Developer/ark-processor/processor/definitions.sv
+F/media/psf/Home/Developer/ark-processor/processor/definitions.sv
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 /media/psf/Home/Developer/ark-processor/processor/definitions.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/definitions.sv|
+!i113 1
+R12
+vIF
+R1
+R21
+!i10b 1
+!s100 A7hI0fech6hf;faWcMPLY2
+IbkPRBo=QoFO2GzZdJoQAO3
+R3
+!s105 IF_sv_unit
+S1
+R0
+w1481357992
+8/media/psf/Home/Developer/ark-processor/processor/IF.sv
+F/media/psf/Home/Developer/ark-processor/processor/IF.sv
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 /media/psf/Home/Developer/ark-processor/processor/IF.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/IF.sv|
+!i113 1
+R12
+n@i@f
+vInstROM
+R1
+R21
+!i10b 1
+!s100 6P7Fm:Fh^kT4?2K_nbOKR1
+IRBzVz5nhDSNNUM2=2@7iR2
+R3
+!s105 InstROM_sv_unit
+S1
+R0
+w1481350607
+8/media/psf/Home/Developer/ark-processor/processor/InstROM.sv
+F/media/psf/Home/Developer/ark-processor/processor/InstROM.sv
+L0 22
+R8
+r1
+!s85 0
+31
+R9
+!s107 /media/psf/Home/Developer/ark-processor/processor/InstROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/InstROM.sv|
+!i113 1
+R12
+n@inst@r@o@m
+vProblem_17_tb
+R1
+R14
+!i10b 1
+!s100 z[Ae4NZaEgka:Nk;bCmH=2
+IlMBD>HhboBM;M^fbU;m1E1
+R3
+!s105 Problem_17_tb_sv_unit
+S1
+R0
+w1481341196
+8/media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv
+F/media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R15
+!s107 /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv|
+!i113 1
+R12
+n@problem_17_tb
+vProblem_18_tb
+R1
+R14
+!i10b 1
+!s100 YdZ0f4Sga2Oan:=GKi@km3
+IN`hDC@1<kD3`>^SIo29o60
+R3
+!s105 Problem_18_tb_sv_unit
+S1
+R0
+w1481363477
+8/media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv
+F/media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R15
+!s107 /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv|
+!i113 1
+R12
+n@problem_18_tb
+vProblem_19_tb
+R1
+R14
+!i10b 1
+!s100 WQ:^bT=JFOCoJ1j=kf1?41
+IZL@1F4W;GXK_b8lNZAanb0
+R3
+!s105 Problem_19_tb_sv_unit
+S1
+R0
+w1481363476
+8/media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv
+F/media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R15
+!s107 /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv|
+!i113 1
+R12
+n@problem_19_tb
+vreg_file
+R1
+R21
+!i10b 1
+!s100 PbW^lHlC_Xi?]Ig8Y;9MY2
+I@k4M6?Oo9Vm?f5f`OWP2=1
+R3
+!s105 reg_file_sv_unit
+S1
+R0
+w1481366866
+8/media/psf/Home/Developer/ark-processor/processor/reg_file.sv
+F/media/psf/Home/Developer/ark-processor/processor/reg_file.sv
+L0 18
+R8
+r1
+!s85 0
+31
+R9
+!s107 /media/psf/Home/Developer/ark-processor/processor/reg_file.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/reg_file.sv|
+!i113 1
+R12
+vTopLevel
+R1
+R14
+!i10b 1
+!s100 `3E1PW@e?<iFlF?@PGdW_3
+I6S7UN3jUzIPo@>TWNV[B=0
+R3
+!s105 TopLevel_sv_unit
+S1
+R0
+w1481360118
+8/media/psf/Home/Developer/ark-processor/processor/TopLevel.sv
+F/media/psf/Home/Developer/ark-processor/processor/TopLevel.sv
+R13
+R8
+r1
+!s85 0
+31
+R9
+!s107 /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/media/psf/Home/Developer/ark-processor/processor/TopLevel.sv|
+!i113 1
+R12
+n@top@level

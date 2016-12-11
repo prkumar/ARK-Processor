@@ -1,4 +1,4 @@
-module Problem_17_tb.sv;
+module Problem_17_tb;
 
     // Inputs
     bit start;
@@ -16,12 +16,10 @@ module Problem_17_tb.sv;
 
     initial begin
         // Initialize Inputs
-      $readmemb("Instructions17.txt", uut.IR1.ROM_core);
-      $readmemb("Reg_File_17.txt",   uut.IR1. .reg_file);
-      $readmemb("Data_Mem_17.txt",IR1. .core);
+        $readmemb("instructions_17.txt", uut.inst_module.ROM_core);
         // Wait 100 ns for global reset to finish
         #100ns;
-      start = 1; 
+        start = 1; 
         #10ns;
         start = 0;
         // Add stimulus here

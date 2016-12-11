@@ -1,0 +1,1057 @@
+# Loading project Lab2
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim work.Problem_18_tb
+# vsim work.Problem_18_tb 
+# Start time: 01:51:52 on Dec 10,2016
+# Loading sv_std.std
+# Loading work.Problem_18_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+add wave -position insertpoint  \
+sim:/Problem_18_tb/uut/start \
+sim:/Problem_18_tb/uut/CLK \
+sim:/Problem_18_tb/uut/halt \
+sim:/Problem_18_tb/uut/Format \
+sim:/Problem_18_tb/uut/Branch \
+sim:/Problem_18_tb/uut/AccRead \
+sim:/Problem_18_tb/uut/MemWrite \
+sim:/Problem_18_tb/uut/OverflowSwitch \
+sim:/Problem_18_tb/uut/ALUOp \
+sim:/Problem_18_tb/uut/ALUSrcB \
+sim:/Problem_18_tb/uut/RegWrite \
+sim:/Problem_18_tb/uut/MemtoReg \
+sim:/Problem_18_tb/uut/PC \
+sim:/Problem_18_tb/uut/Overflow \
+sim:/Problem_18_tb/uut/Instruction \
+sim:/Problem_18_tb/uut/InstCounter \
+sim:/Problem_18_tb/uut/Accumulator \
+sim:/Problem_18_tb/uut/ReadData1 \
+sim:/Problem_18_tb/uut/ReadData2 \
+sim:/Problem_18_tb/uut/Compare \
+sim:/Problem_18_tb/uut/ALUOut \
+sim:/Problem_18_tb/uut/ALUOverflow \
+sim:/Problem_18_tb/uut/MemOut \
+sim:/Problem_18_tb/uut/CarryOut \
+sim:/Problem_18_tb/uut/ReadReg1 \
+sim:/Problem_18_tb/uut/ReadReg2 \
+sim:/Problem_18_tb/uut/WriteValue \
+sim:/Problem_18_tb/uut/ALUInputB
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 660 ns  Iteration: 0  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+add wave -position insertpoint  \
+sim:/Problem_18_tb/uut/register_module/registers
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 660 ns  Iteration: 0  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 4125 ns  Iteration: 4  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_18_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 4125 ns  Iteration: 4  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_18_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 4125 ns  Iteration: 4  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_18_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 4125 ns  Iteration: 4  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_18_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 4065 ns  Iteration: 4  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_18_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 4065 ns  Iteration: 4  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+vsim work.Problem_17_tb
+# End time: 02:32:09 on Dec 10,2016, Elapsed time: 0:40:17
+# Errors: 0, Warnings: 17
+# vsim work.Problem_17_tb 
+# Start time: 02:32:09 on Dec 10,2016
+# Loading sv_std.std
+# Loading work.Problem_17_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+add wave -position insertpoint  \
+sim:/Problem_17_tb/uut/register_module/registers
+add wave -position insertpoint  \
+sim:/Problem_17_tb/uut/register_module/Compare
+add wave -position insertpoint  \
+sim:/Problem_17_tb/uut/register_module/compare45 \
+sim:/Problem_17_tb/uut/register_module/compare46 \
+sim:/Problem_17_tb/uut/register_module/compare56
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv(27)
+#    Time: 1125 ns  Iteration: 4  Instance: /Problem_17_tb
+# Break in Module Problem_17_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_17_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv(27)
+#    Time: 1125 ns  Iteration: 4  Instance: /Problem_17_tb
+# Break in Module Problem_17_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_17_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv(27)
+#    Time: 1125 ns  Iteration: 4  Instance: /Problem_17_tb
+# Break in Module Problem_17_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_17_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv(27)
+#    Time: 1125 ns  Iteration: 4  Instance: /Problem_17_tb
+# Break in Module Problem_17_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv failed with 2 errors.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 1 failed with 2 errors.
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv failed with 1 errors.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_17_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv(27)
+#    Time: 1125 ns  Iteration: 4  Instance: /Problem_17_tb
+# Break in Module Problem_17_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv line 27
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv(27)
+#    Time: 1125 ns  Iteration: 4  Instance: /Problem_17_tb
+# Break in Module Problem_17_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv line 27
+vsim work.Problem_19_tb
+# End time: 03:10:37 on Dec 10,2016, Elapsed time: 0:38:28
+# Errors: 0, Warnings: 12
+# vsim work.Problem_19_tb 
+# Start time: 03:10:38 on Dec 10,2016
+# Loading sv_std.std
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/start \
+sim:/Problem_19_tb/uut/CLK \
+sim:/Problem_19_tb/uut/halt \
+sim:/Problem_19_tb/uut/Format \
+sim:/Problem_19_tb/uut/Branch \
+sim:/Problem_19_tb/uut/AccRead \
+sim:/Problem_19_tb/uut/MemWrite \
+sim:/Problem_19_tb/uut/OverflowSwitch \
+sim:/Problem_19_tb/uut/ALUOp \
+sim:/Problem_19_tb/uut/ALUSrcB \
+sim:/Problem_19_tb/uut/RegWrite \
+sim:/Problem_19_tb/uut/MemtoReg \
+sim:/Problem_19_tb/uut/PC \
+sim:/Problem_19_tb/uut/Overflow \
+sim:/Problem_19_tb/uut/Instruction \
+sim:/Problem_19_tb/uut/InstCounter \
+sim:/Problem_19_tb/uut/Accumulator \
+sim:/Problem_19_tb/uut/ReadData1 \
+sim:/Problem_19_tb/uut/ReadData2 \
+sim:/Problem_19_tb/uut/Compare \
+sim:/Problem_19_tb/uut/ALUOut \
+sim:/Problem_19_tb/uut/ALUOverflow \
+sim:/Problem_19_tb/uut/MemOut \
+sim:/Problem_19_tb/uut/CarryOut \
+sim:/Problem_19_tb/uut/ReadReg1 \
+sim:/Problem_19_tb/uut/ReadReg2 \
+sim:/Problem_19_tb/uut/WriteValue \
+sim:/Problem_19_tb/uut/ALUInputB
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 660 ns  Iteration: 0  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 1655 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/register_module/registers
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 1655 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 1655 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 660 ns  Iteration: 0  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 660 ns  Iteration: 0  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 6045 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 5595 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 5595 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 5465 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 5465 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+# Compile of ALU.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of DataRAM.sv was successful.
+# Compile of definitions.sv was successful.
+# Compile of IF.sv was successful.
+# Compile of InstROM.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of TopLevel.sv was successful.
+# Compile of Problem_17_tb.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of Problem_18_tb.sv was successful.
+# Compile of Problem_19_tb.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 5465 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/PC
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/InstCounter
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/register_module/registers
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/register_module/Compare
+# Load canceled
+vsim work.Problem_18_tb
+# End time: 04:18:21 on Dec 10,2016, Elapsed time: 1:07:43
+# Errors: 24, Warnings: 30
+# vsim work.Problem_18_tb 
+# Start time: 04:18:21 on Dec 10,2016
+# Loading sv_std.std
+# Loading work.Problem_18_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+add wave -position insertpoint  \
+sim:/Problem_18_tb/uut/PC
+add wave -position insertpoint  \
+sim:/Problem_18_tb/uut/InstCounter
+add wave -position insertpoint  \
+sim:/Problem_18_tb/uut/register_module/registers
+restart
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_18_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv(27)
+#    Time: 4065 ns  Iteration: 4  Instance: /Problem_18_tb
+# Break in Module Problem_18_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv line 27
+vsim work.Problem_19_tb
+# End time: 04:24:15 on Dec 10,2016, Elapsed time: 0:05:54
+# Errors: 0, Warnings: 3
+# vsim work.Problem_19_tb 
+# Start time: 04:24:15 on Dec 10,2016
+# Loading sv_std.std
+# Loading work.Problem_19_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/PC
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/InstCounter
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/register_module/Compare
+add wave -position insertpoint  \
+sim:/Problem_19_tb/uut/register_module/registers
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_19_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv(27)
+#    Time: 5465 ns  Iteration: 4  Instance: /Problem_19_tb
+# Break in Module Problem_19_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv line 27
+vsim work.Problem_17_tb
+# End time: 04:28:45 on Dec 10,2016, Elapsed time: 0:04:30
+# Errors: 0, Warnings: 2
+# vsim work.Problem_17_tb 
+# Start time: 04:28:45 on Dec 10,2016
+# Loading sv_std.std
+# Loading work.Problem_17_tb
+# Loading work.TopLevel
+# Loading work.carry_reg
+# Loading work.IF
+# Loading work.InstROM
+# Loading work.definitions
+# Loading work.Control_sv_unit
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.ALU_sv_unit
+# Loading work.ALU
+# Loading work.DataRAM
+# ** Warning: (vsim-3015) /media/psf/Home/Developer/ark-processor/processor/TopLevel.sv(103): [PCDPC] - Port size (8) does not match connection size (9) for port 'Target'. The port definition is at: /media/psf/Home/Developer/ark-processor/processor/IF.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/if_module File: /media/psf/Home/Developer/ark-processor/processor/IF.sv
+add wave -position insertpoint  \
+sim:/Problem_17_tb/uut/PC
+add wave -position insertpoint  \
+sim:/Problem_17_tb/uut/InstCounter
+add wave -position insertpoint  \
+sim:/Problem_17_tb/uut/register_module/registers
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 257 of file "dataram_init.list". (Current address [256], address range [0:255])    : /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv(33)
+#    Time: 0 ps  Iteration: 0  Instance: /Problem_17_tb/uut/Data_Module
+# ** Note: $stop    : /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv(27)
+#    Time: 1125 ns  Iteration: 4  Instance: /Problem_17_tb
+# Break in Module Problem_17_tb at /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv line 27

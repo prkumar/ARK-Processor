@@ -1,1 +1,82 @@
+/media/psf/Home/Developer/ark-processor/processor/carry_reg.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/carry_reg.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module carry_reg
 
+Top level modules:
+	carry_reg
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/Control.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/Control.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling package Control_sv_unit
+-- Importing package definitions
+-- Compiling module Control
+
+Top level modules:
+	Control
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/definitions.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/definitions.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling package definitions
+
+Top level modules:
+	--none--
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/reg_file.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/reg_file.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/Problem_17_tb.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module Problem_17_tb
+
+Top level modules:
+	Problem_17_tb
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/Problem_18_tb.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module Problem_18_tb
+
+Top level modules:
+	Problem_18_tb
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/IF.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/IF.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module IF
+
+Top level modules:
+	IF
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/Problem_19_tb.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module Problem_19_tb
+
+Top level modules:
+	Problem_19_tb
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/ALU.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/ALU.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling package ALU_sv_unit
+-- Importing package definitions
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/DataRAM.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module DataRAM
+
+Top level modules:
+	DataRAM
+
+} {} {}} /media/psf/Home/Developer/ark-processor/processor/InstROM.sv {1 {vlog -work work -sv -stats=none /media/psf/Home/Developer/ark-processor/processor/InstROM.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module InstROM
+
+Top level modules:
+	InstROM
+
+} {} {}}
